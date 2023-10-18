@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(175, 175, 122);
+    border: 5px solid beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    /* border: 2px solid black; */
+    width: 50%;
+    height: 70%;
+    background-color: rgb(211, 218, 223);
+    box-shadow: 10px 10px 8px rgb(156, 143, 117);
+    border-radius: 10px;
+}
+.box h1{
+    padding: 1.2vw;
+}
+.namelabel{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    padding-left: 1.2vw;
+    width: 100%;
+    height: 60px;
+    
+}
+.namelabel .first{
+    /* border: 2px solid black; */
+    width: 45%;
+    
+}
+.namelabel .first input{
+    width: 95%;
+    height: 50%;
+   
+    
+}
+.namelabel .last{
+    /* border: 2px solid black; */
+    width: 45%;
+}
+.namelabel .last input{
+    width: 95%;
+    height: 50%;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    padding-left: 1.2vw;
+    width: 100%;
+    height: 60px;
+}
+.info .email{
+    width: 45%;
+}
+.info .email input{ 
+    width: 95%;
+    height: 50%;
+}
+.info .role{
+    width: 45%;
+}
+.info .role select{
+    width: 95%;
+    height: 50%;
+}
+.add{
+    padding-left: 1.2vw;
+    width: 100%;
+    /* height: 60px;  */
+}
+.add textarea{
+    width: 98%;
+}
+.info2{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    padding-left: 1.2vw;
+    width: 100%;
+    height: 60px; 
+}
+.info2 .place{
+    /* border: 2px solid black; */
+    width: 45%;
+    
+}
+.info2 .place input{
+    width: 95%;
+    height: 50%;
+   
+    
+}
+.info2 .code{
+    /* border: 2px solid black; */
+    width: 45%;
+}
+.info2 .code input{
+    width: 95%;
+    height: 50%;
+}
+
+.lstdiv{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    padding-left: 1.2vw;
+    width: 100%;
+    height: 60px; 
+}
+.lstdiv .dates{
+    /* border: 2px solid black; */
+    width: 45%;
+    
+}
+.lstdiv .dates input{
+    width: 95%;
+    height: 50%;
+   
+    
+}
+.lstdiv .cv{
+    /* border: 2px solid black; */
+    width: 45%;
+   
+}
+.lstdiv .cv input{
+    width: 95%;
+    /* height: 50%; */
+    padding: 5px;
+    border: 1px solid black;
+    
+}
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.5vw;
+ 
+}
+.btn button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(250, 184, 61);
+    cursor: pointer;
+    color: rgb(21, 22, 22);
+    box-shadow: 2px 2px 2px black;
+    font-size: larger;
+    transition: all 1s ease 0s;
+}
+.btn button:hover{
+    color: black;
+    
+    background-color: wheat;
+}
