@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    /* border: 10px solid black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 26%, rgba(148,187,233,1) 100%);
+}
+.content{
+   margin: 2vw;
+    width: 80%;
+    /* border: 8px solid rgb(238, 232, 232); */
+   display: flex;
+   align-items: center;
+
+}
+.left{
+    /* border: 2px solid wheat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+   height: 80%;
+   margin: 2rem;
+   color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.left h1, p{
+    margin-bottom: 1.3rem;
+    text-align: center;
+    padding: 1.2rem;
+    /* border: 2px solid wheat; */
+}
+.right{
+    /* border: 2px solid white; */
+    height: 80%;
+    width:60% ;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+   
+    
+    
+}
+.items{
+    
+    border: 1px solid grey;
+   height: 100%; 
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(254, 254, 254);
+   font-weight: 700;
+   
+}
+#waterfall{
+    
+    background: url(assests/waterfall.avif);
+    /* background-size: cover; */
+   background-position: top;
+    background-color: #222;
+   background-blend-mode: hard-light;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    transition: all 0.5s ease-in-out;
+}
+#waterfall:hover{
+    background-color:#999;
+    background-position: center;
+   
+}
+#hill{
+    background:url(assests/hill.jpg);
+    background-size: cover;
+    background-position: top;
+    background-color: #222;
+   background-blend-mode: hard-light;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    transition: all 0.5s ease-in-out;
+}
+#hill:hover{
+    background-color:#999;
+    background-position: center;
+}
+#rain{
+    background: url(assests/rain.avif);
+    /* background-size: cover; */
+    background-position: top;
+    background-color: #222;
+   background-blend-mode: hard-light;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    transition: all 0.5s ease-in-out;
+}
+#rain:hover{
+    background-color:#999;
+    background-position: center;
+}
+#mountain{
+    background: url(assests/mountain.jpg);
+    background-size: cover;
+    background-position: top;
+    background-color: #222;
+   background-blend-mode: hard-light;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    transition: all 0.5s ease-in-out;
+}
+#mountain:hover{
+    background-color:#999;
+    background-position: center;
+}
+#beach{
+    background: url(assests/beach.jpg);
+    background-size: cover;
+    background-position: top;
+    background-color: #222;
+   background-blend-mode: hard-light;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    transition: all 0.5s ease-in-out;
+}
+#beach:hover{
+    background-color:#999;
+    background-position: center;
+}
+#ocean{
+    background: url(assests/ocean.jpeg);
+    background-size: cover;
+    background-position: top;
+    background-color: #222;
+   background-blend-mode: hard-light;
+   transition: all 0.5s ease-in-out;
+}
+#ocean:hover{
+    background-color:#999;
+    background-position: center;
+}
+#tree{
+    background: url(assests/tree.webp);
+    /* background-size: cover; */
+    background-position: top;
+    background-color: #222;
+   background-blend-mode: hard-light;
+   transition: all 0.5s ease-in-out;
+}
+#tree:hover{
+    background-color:#999;
+    background-position: center;
+}
+
+
+@media screen and (max-width:700px) {
+    .content{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    
+}

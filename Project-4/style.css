@@ -61,20 +61,20 @@ main{
     height: 14rem;
 }
 .box .upper img{
-    width: 100%;
+    width: 99.9%;
     object-fit: cover;
     object-position: center;
     position: absolute;
     height: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    overflow: hidden;
    
 
 }
 .box .upper img:hover{
     transform: scale(1.1);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    
     transition-duration: 200ms;
    
 }
